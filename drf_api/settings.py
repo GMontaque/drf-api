@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'posts',
     'profiles',
     'comments',
-],
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -63,6 +63,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-gmontaque-drfapi-tgx0d4u3rqc.ws.codeinstitute-ide.net',
+    # Add any other trusted origins here
 ]
 
 ROOT_URLCONF = 'drf_api.urls'
