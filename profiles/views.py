@@ -4,7 +4,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from drf_api.permissions import IsOwnerOrReadOnly
 from .models import Profile
-from .serializer import ProfileSerializer
+from .serializers import ProfileSerializer
 
 # displays all data i.e the profiles created which link to the users in a JSON format
 # Displays all profile data linked to the users in a JSON format
