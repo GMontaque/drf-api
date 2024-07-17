@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-6wb#ip0z2!i%o*pqxqwu4wmwrn)l_y!dnzo_k=#f*@%ttv2e!o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-gmontaque-drfapi-tgx0d4u3rqc.ws.codeinstitute-ide.net','localhost:8000','localhost']
+ALLOWED_HOSTS = ['8000-gmontaque-drfapi-tgx0d4u3rqc.ws.codeinstitute-ide.net','localhost:8000','localhost','127.0.0.1']
 
 
 # Application definition

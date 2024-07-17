@@ -17,3 +17,5 @@ class FollwersDetail(generics.RetrieveDestroyAPIView):
     queryset = Follower.objects.all()
     permission_classes = [IsOwnerOrReadOnly]
 
+
+
