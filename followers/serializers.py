@@ -4,19 +4,21 @@ from .models import Follower
 
 
 class FollowerSerializer(serializers.ModelSerializer):
+    """
+    Serializer for the Follower model
+    Create method handles the unique constraint on 'owner' and 'followed'
+    """
     owner = serializers.ReadOnlyField(source='owner.username')
     followed_name = serializers.ReadOnlyField(source='followed.username')
 
     class Meta:
         model = Follower
         fields = [
-            'id','owner','followed','created_at','followed_name'
+            'id', 'owner', 'created_at', 'followed', 'followed_name'
         ]
-    
-    def create(self, validate_data):
+
+    def create(self, validated_data):
         try:
-            return super().create(validate_data)
+            return super().create(validated_data)
         except IntegrityError:
-            return serializers.ValidationError({
-                'details': 'possilbe duplicate'
-            })
+            raise serializers.ValidationError({'detail': 'possible duplicate'})
