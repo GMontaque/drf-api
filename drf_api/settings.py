@@ -45,6 +45,7 @@ REST_USE_JWT = True
 JWT_AUTH_SECURE = True
 JWT_AUTH_COOKIE = 'my-app-auth'
 JWT_AUTH_REFRESH_COOKIE = 'my-refresh-token'
+JWT_AUTH_SAMESITE = 'None'
 
 REST_AUTH_SERIALIZERS = {
     'USER_DETAILS_SERIALIZER': 'drf_api.serializers.CurrentUserSerializer'
@@ -59,7 +60,7 @@ SECRET_KEY = 'django-insecure-6wb#ip0z2!i%o*pqxqwu4wmwrn)l_y!dnzo_k=#f*@%ttv2e!o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-gmontaque-drfapi-tgx0d4u3rqc.ws.codeinstitute-ide.net','localhost:8000','localhost','127.0.0.1','rest-framework-app-aed304802b04.herokuapp.com']
+ALLOWED_HOSTS = ['... .herokuapp.com','8000-gmontaque-drfapi-tgx0d4u3rqc.ws.codeinstitute-ide.net','localhost:8000','localhost','127.0.0.1','rest-framework-app-aed304802b04.herokuapp.com']
 
 
 # Application definition
