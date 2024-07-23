@@ -36,7 +36,11 @@ if "CLIENT_ORIGIN" in os.environ:
     CORS_ALLOWED_ORIGINS = [os.environ.get("CLIENT_ORIGIN")]
 
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOWED_ORIGIN_REGEXES = [r"^https://.*\.codeinstitute-ide\.net$",]
+CORS_ALLOWED_ORIGIN_REGEXES = [
+r"^https://.*\.codeinstitute-ide\.net$",
+r"^http:\/\/localhost:*([0-9]+)?$",
+r"^https:\/\/localhost:*([0-9]+)?$"
+]
 
 REST_USE_JWT = True
 JWT_AUTH_SECURE = True
