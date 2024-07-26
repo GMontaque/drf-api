@@ -42,11 +42,11 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
     CORS_ALLOWED_ORIGIN_REGEXES = [r"^https://.*\.codeinstitute-ide\.net$",]
 
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^https://.*\.codeinstitute-ide\.net$",
-    r"^http:\/\/localhost:*([0-9]+)?$",
-    r"^https:\/\/localhost:*([0-9]+)?$"
-]
+# CORS_ALLOWED_ORIGIN_REGEXES = [
+#     r"^https://.*\.codeinstitute-ide\.net$",
+#     r"^http:\/\/localhost:*([0-9]+)?$",
+#     r"^https:\/\/localhost:*([0-9]+)?$"
+# ]
 
 REST_USE_JWT = True
 JWT_AUTH_SECURE = True
