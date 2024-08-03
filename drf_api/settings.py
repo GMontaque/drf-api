@@ -60,7 +60,7 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEV' in os.environ
+DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'),'localhost:3000','8000-gmontaque-drfapi-tgx0d4u3rqc.ws.codeinstitute-ide.net','localhost:8000','localhost','127.0.0.1','rest-framework-app-aed304802b04.herokuapp.com']
 
